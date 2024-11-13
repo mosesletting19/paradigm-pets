@@ -1,0 +1,650 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation Wrapper */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+/* Name Styling */
+header h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Navigation Section */
+nav {
+    margin-left: auto;
+}
+
+/* Navigation List Styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Items */
+.navbar li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Dropdown Styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 8px 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #007BFF;
+}
+
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 300px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Card Styling */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    /* Allow wrapping on small screens */
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    /* Add space between cards */
+}
+
+.icon {
+    font-size: 24px;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+/* Container for CTA Button */
+.cta-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* CTA Button */
+.cta-button {
+    padding: 12px 24px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* FAQ Section */
+.faq {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.faq-item .answer {
+    display: none;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #555;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.faq-item .question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.faq-item .toggle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.faq-item.open .answer {
+    display: block;
+    max-height: 1000px;
+}
+
+.faq-item.open .toggle {
+    content: '-';
+}
+
+/* Responsive Design for Small Screens */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h4 {
+        font-size: 16px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .faq {
+        padding: 15px;
+    }
+
+    .faq-item {
+        font-size: 16px;
+    }
+
+    .answer {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 100%;
+        /* Make cards full width on small screens */
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    header h4 {
+        font-size: 14px;
+    }
+
+    .card {
+        margin: 10px;
+        /* Ensure equal margin for each card */
+    }
+}
+
+/* Hamburger Icon Styles */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        /* Hide navbar initially on small screens */
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        /* Position it under the header */
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    /* Display hamburger icon on small screens */
+    .hamburger {
+        display: block;
+        margin-left: auto;
+        color: #333;
+    }
+
+    /* Show the menu when active */
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    /* Style for navbar links on mobile */
+    .navbar-menu li {
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .navbar-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .navbar-menu a {
+        font-size: 16px;
+        padding: 10px;
+        color: #333;
+    }
+}
+
+/* Cat Page Specific Styles */
+.cat-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.cat-content h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.cat-description {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.cat-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    /* Allows wrapping on small screens */
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    /* Adds space between cards */
+}
+
+.card .icon {
+    font-size: 48px;
+    color: #3498db;
+    /* Unique color for cat icons */
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+/* Dog Page Specific Styles */
+.dog-content {
+    padding: 20px;
+}
+
+.dog-content h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.dog-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.dog-description {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    /* Allows wrapping on small screens */
+}
+
+.service {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    /* Adds space between services */
+}
+
+.service .icon {
+    font-size: 48px;
+    /* Increases icon size for emphasis */
+    color: #ff5733;
+    /* Adds a vibrant color to icons */
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.service p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+/* Bird Page Specific Styles */
+.bird-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.bird-content h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.bird-description {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Contact Page Specific Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 12px 24px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Bird Care and Services Section */
+.birds {
+    padding: 40px;
+    background-color: #f9f9f9;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.birds h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.birds p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bird-info h3 {
+    font-size: 20px;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+.bird-info ul {
+    list-style-type: none;
+    padding: 0;
+    color: #555;
+}
+
+.bird-info li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Consultation Form Styling */
+.consultation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.consultation-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.consultation-form input[type="text"],
+.consultation-form input[type="email"],
+.consultation-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+.consultation-form input[type="text"]:focus,
+.consultation-form input[type="email"]:focus,
+.consultation-form textarea:focus {
+    border-color: #2980b9;
+    background-color: #fff;
+    outline: none;
+}
+
+.consultation-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.cta-button {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #1c6399;
+}

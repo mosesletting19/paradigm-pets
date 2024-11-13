@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds - Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header and Navigation Wrapper -->
+    <div class="head">
+        <!-- Header Section -->
+        <header>
+            <img src="images/logo.png" alt="Paradigm Pet Professionals Logo" class="logo">
+            <h4>Paradigm Pet Professionals</h4>
+        </header>
+
+        <!-- Navigation Section -->
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="index.html#services">Services <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="index.html#training">Training</a></li>
+                        <hr>
+                        <li><a href="index.html#consultation">Virtual Consultation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#pet-types">Pet Types <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="dog.html">Dog</a></li>
+                        <hr>
+                        <li><a href="cat.html">Cat</a></li>
+                        <hr>
+                        <li><a href="bird.html">Bird</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Birds Information Section -->
+    <section class="birds">
+        <h2>Bird Care and Services</h2>
+        <p>At Paradigm Pet Professionals, we offer expert care and advice for your feathered friends. Whether you need
+            help with training, health advice, or behavioral consultations, our experienced team is here to support you.
+        </p>
+
+        <div class="bird-info">
+            <h3>Common Bird Care Services</h3>
+            <ul>
+                <li><strong>Training</strong>: Behavior modification, communication techniques, and flying lessons.</li>
+                <li><strong>Health Care</strong>: Feather trimming, beak and claw health, and nutritional advice.</li>
+                <li><strong>Consultations</strong>: Virtual consultations for bird behavior or health questions.</li>
+            </ul>
+        </div>
+
+        <h3>Book a Consultation for Your Bird</h3>
+        <p>Have questions about your bird's health or behavior? Schedule a virtual consultation with one of our experts
+            to get personalized guidance. Fill out the form below to book a session.</p>
+
+        <form action="/submit_bird_consultation_form" method="POST" class="consultation-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="bird_type">Bird Type</label>
+            <input type="text" id="bird_type" name="bird_type" placeholder="e.g., Parrot, Finch" required>
+
+            <label for="issue">Issue/Concern</label>
+            <textarea id="issue" name="issue" placeholder="Describe the issue or concern with your bird"
+                required></textarea>
+
+            <button type="submit" class="cta-button" href="virtual_consultation.html">Book Consultation</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

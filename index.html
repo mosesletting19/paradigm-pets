@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header and Navigation Wrapper -->
+    <div class="head">
+        <!-- Header Section -->
+        <header>
+            <img src="images/logo.png" alt="Paradigm Pet Professionals Logo" class="logo">
+            <h4>Paradigm Pet Professionals</h4>
+        </header>
+
+        <!-- Navigation Section -->
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#services">Services <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <!-- <li><a href="#training">Training</a></li> -->
+                        <hr>
+                        <li><a href="virtual_consultation.html">Virtual Consultation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#pet-types">Pet Types <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="dog.html">Dog</a></li>
+                        <hr>
+                        <li><a href="cat.html">Cat</a></li>
+                        <hr>
+                        <li><a href="bird.html">Bird</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h2>Expert Pet Care</h2>
+            <p>Professional care for all beloved pets</p>
+        </div>
+        <img src="images/pet.jpg" alt="Pet Image" class="hero-image">
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards">
+        <div class="card">
+            <i class="icon">🐶</i>
+            <h3>In-Home Care</h3>
+            <p>Professional pet sitting and daily visits</p>
+        </div>
+        <div class="card">
+            <i class="icon">🐾</i>
+            <h3>Training Services</h3>
+            <p>Behavioral training and socialization</p>
+        </div>
+        <div class="card">
+            <i class="icon">🩺</i>
+            <h3>Pet Healthcare</h3>
+            <p>Regular checkups and medical attention</p>
+        </div>
+
+    </section>
+
+    <!-- CTA Section -->
+    <div class="cta-container">
+        <button class="cta-button" href="virtual_consultation.html">Free Consultations Schedule</button>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="question" data-id="1">
+                <span>What services do you offer?</span>
+                <span class="toggle">+</span>
+            </div>
+            <div class="answer">We offer training, healthcare, and virtual consultations.</div>
+        </div>
+        <hr>
+        <div class="faq-item">
+            <div class="question" data-id="2">
+                <span>How do I book a consultation?</span>
+                <span class="toggle">+</span>
+            </div>
+            <div class="answer">You can book through our contact page or call us directly.</div>
+        </div>
+        <hr>
+        <div class="faq-item">
+            <div class="question" data-id="3">
+                <span>Do you provide home visits?</span>
+                <span class="toggle">+</span>
+            </div>
+            <div class="answer">Yes, we offer in-home care for pets.</div>
+        </div>
+        <hr>
+        <div class="faq-item">
+            <div class="question" data-id="4">
+                <span>Can I reschedule my appointment?</span>
+                <span class="toggle">+</span>
+            </div>
+            <div class="answer">Absolutely! Just give us a call to reschedule.</div>
+        </div>
+        <hr>
+        <div class="faq-item">
+            <div class="question" data-id="5">
+                <span>What types of pets do you care for?</span>
+                <span class="toggle">+</span>
+            </div>
+            <div class="answer">We care for dogs, cats, and birds.</div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
